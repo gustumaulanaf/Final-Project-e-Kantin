@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">E-Kantin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque eum voluptas. Amet eaque error esse est et fugiat fugit hic laborum nihil perferendis qui, recusandae reiciendis temporibus veritatis voluptatum!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

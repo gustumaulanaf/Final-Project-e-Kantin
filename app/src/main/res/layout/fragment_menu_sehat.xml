@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.finalproject.e_kantin.MenuSehatFragment">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/sup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-80dp"
+                    android:layout_marginTop="-80dp"
+                    android:src="@drawable/sup_ayam" />
+
+                <TextView
+                    android:id="@+id/namasup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/putih"
+                    android:text="Sup Ayam Bu Riski"
+                    android:textColor="@color/hitam" />
+
+                <Button
+                    android:id="@+id/tbsup"
+                    android:layout_width="@dimen/lebar_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/putih"
+                    android:background="@color/colorPrimary"
+                    android:text="Pesan Sekarang" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/grilled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-120dp"
+                    android:layout_marginTop="-120dp"
+                    android:src="@drawable/grilled" />
+
+                <TextView
+                    android:id="@+id/namamiayam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/putih"
+                    android:text="Grilled Chicken Salad Amikom"
+                    android:textColor="@color/hitam" />
+
+                <Button
+                    android:id="@+id/tbmiayam"
+                    android:layout_width="@dimen/lebar_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/putih"
+                    android:background="@color/colorPrimary"
+                    android:text="Pesan Sekarang" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/sayur_bening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-120dp"
+                    android:layout_marginTop="-100dp"
+                    android:src="@drawable/sayur_bening" />
+
+                <TextView
+                    android:id="@+id/namasayur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/putih"
+                    android:text="Sayur Bening Pak Tono"
+                    android:textColor="@color/hitam" />
+
+                <Button
+                    android:id="@+id/tbgeprek"
+                    android:layout_width="@dimen/lebar_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/putih"
+                    android:background="@color/colorPrimary"
+                    android:text="Pesan Sekarang" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rujak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-120dp"
+                    android:layout_marginTop="-100dp"
+                    android:src="@drawable/rujak_buah" />
+
+                <TextView
+                    android:id="@+id/namarujak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/putih"
+                    android:text="Rujak Buah"
+                    android:textColor="@color/hitam" />
+
+                <Button
+                    android:id="@+id/tbrujak"
+                    android:layout_width="@dimen/lebar_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/putih"
+                    android:background="@color/colorPrimary"
+                    android:text="Pesan Sekarang" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

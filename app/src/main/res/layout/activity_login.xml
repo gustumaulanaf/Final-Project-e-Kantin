@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.finalproject.e_kantin.LoginActivity">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true"
+         android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/gambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/linearLayout"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:layout_marginBottom="-80dp"
+                    android:src="@drawable/logo" />
+
+                <EditText
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/pasw1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:hint="Masukan Username"
+                    android:textColor="#EEFAE207" />
+                <EditText
+        android:id="@+id/pasw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Masukan Password"
+        android:textColor="#EEFAE207"
+        android:inputType="textPassword"/>
+
+
+
+
+                <Button
+        android:id="@+id/bt1"
+                    android:onClick="but1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="138dp"
+        android:textColor="#eefae207"
+        android:background="#ee6e3d87"
+        android:text="Login" />
+     </LinearLayout>
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
