@@ -4,29 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@color/colorPrimary"
     tools:context="com.example.finalproject.e_kantin.SplashActivity">
 
-    <LinearLayout
-        android:id="@+id/l1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo" />
-        <ImageButton
-            android:id="@+id/tombol"
-            android:layout_gravity="center"
+
+        <TextView
+            android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:background="@color/colorPrimary"
+            android:text="e-Kantin"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/lightgray"
             android:layout_centerHorizontal="true"
-            />
-    </LinearLayout>
+            android:layout_centerVertical="true"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="LineScalePartyIndicator"/>
 
 </RelativeLayout>

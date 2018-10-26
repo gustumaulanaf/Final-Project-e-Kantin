@@ -8,59 +8,24 @@
     tools:context="com.example.finalproject.e_kantin.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <LinearLayout
-        android:id="@+id/linear"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal"
-        android:gravity="center"
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="fill_parent"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/putih"
+        app:tabSelectedTextColor="@color/putih"
+        app:tabIndicatorColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/tablayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/makanan"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/tinggi"
-            android:gravity="center"
-            android:textColor="@color/putih"
-            android:layout_marginLeft="@dimen/batas_samping"
-            android:text="MAKANAN"
-            android:onClick="fmakanan"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/tinggi"
-            android:gravity="center"
-            android:textColor="@color/putih"
-            android:layout_marginLeft="@dimen/batas_samping"
-            android:onClick="fminuman"
-            android:text="MINUMAN"
-            android:id="@+id/minuman"/>
-        <TextView
-            android:id="@+id/menusehat"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/tinggi"
-            android:gravity="center"
-            android:textColor="@color/putih"
-            android:layout_marginLeft="@dimen/batas_samping"
-            android:text="MENU SEHAT"
-            android:onClick="fsehat"/>
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
 
-        <TextView
-            android:id="@+id/dessert"
-            android:layout_width="111dp"
-            android:layout_height="@dimen/tinggi"
-            android:gravity="center"
-            android:onClick="fdessert"
-            android:text="DESSERT"
-            android:textColor="@color/putih" />
-
-    </LinearLayout>
-
-<FrameLayout
-    android:id="@+id/tampilmenu"
-    android:layout_below="@+id/linear"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="5dp">
-
-</FrameLayout>
 </RelativeLayout>

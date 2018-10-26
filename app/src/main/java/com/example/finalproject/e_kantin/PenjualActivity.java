@@ -1,22 +1,22 @@
 package com.example.finalproject.e_kantin;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-public class AdminActivity extends AppCompatActivity
+public class PenjualActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin);
+        setContentView(R.layout.activity_penjual);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -56,15 +56,14 @@ public class AdminActivity extends AppCompatActivity
 
         if (id == R.id.profile) {
 
-        }  else if (id == R.id.pengaturan) {
-
         }
         else if (id == R.id.tentang) {
 
-
         }
-        else if (id == R.id.keluar) {
-            Intent intent = new Intent(AdminActivity.this,LoginActivity.class);
+        else if (id == R.id.pengaturan) {
+
+        } else if (id == R.id.keluar) {
+            Intent intent = new Intent(PenjualActivity.this,LoginActivity.class);
             startActivity(intent);
 
         }

@@ -3,6 +3,7 @@ package com.example.finalproject.e_kantin;
 import android.annotation.SuppressLint;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -21,58 +22,26 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private TabLayout tabLayout;
     private ViewPager viewPager;
-
     MakananFragment makananFragment;
     MenuSehatFragment menuSehatFragment;
     MinumanFragment minumanFragment;
-    DessertFragment dessertFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       android.support.v4.app.FragmentTransaction send = getSupportFragmentManager().beginTransaction();
-        send.setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit);
-        send.replace(R.id.tampilmenu ,  new MakananFragment());
-        send.commit();
+        viewPager =findViewById(R.id.viewpager);
+        viewPager.setOffscreenPageLimit(3);
 
-
-
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-
-      //  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        //fab.setOnClickListener(new View.OnClickListener() {
-      //      @Override
-        //    public void onClick(View view) {
-          //      Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-           //             .setAction("Action", null).show();
-         //   }
-        //});
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-/*
-        //Initializing viewPager
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
-
-        //Initializing the tablayout
-        tabLayout = (TabLayout) findViewById(R.id.tablayout);
+        tabLayout =findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(viewPager);
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -94,7 +63,23 @@ public class MainActivity extends AppCompatActivity
         });
 
         setupViewPager(viewPager);
- */
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
 
 
     }
@@ -120,11 +105,18 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        }  else if (id == R.id.nav_share) {
+        if (id == R.id.profile) {
 
-        } else if (id == R.id.nav_send) {
+        }  else if (id == R.id.pengaturan) {
+
+        }
+        else if (id == R.id.tentang) {
+
+
+        }
+        else if (id == R.id.keluar) {
+            Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+            startActivity(intent);
 
         }
 
@@ -136,38 +128,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    public void fmakanan(View view) {
-
-       android.support.v4.app.FragmentTransaction send = getSupportFragmentManager().beginTransaction();
-        send.setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit);
-        send.replace(R.id.tampilmenu ,  new MakananFragment());
-        send.commit();}
-
-
-    public void fminuman(View view) {
-        android.support.v4.app.FragmentTransaction send = getSupportFragmentManager().beginTransaction();
-        send.setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit);
-        send.replace(R.id.tampilmenu ,  new MinumanFragment());
-        send.commit();
-    }
-
-
-
-
-    public void fdessert(View view) {
-        android.support.v4.app.FragmentTransaction send = getSupportFragmentManager().beginTransaction();
-        send.setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit);
-        send.replace(R.id.tampilmenu ,  new DessertFragment());
-        send.commit();
-    }
-    public void fsehat(View view) {
-        android.support.v4.app.FragmentTransaction send = getSupportFragmentManager().beginTransaction();
-        send.setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit);
-        send.replace(R.id.tampilmenu ,  new MenuSehatFragment());
-        send.commit();
-    }
-
- /*   private void setupViewPager(ViewPager viewPager)
+  private void setupViewPager(ViewPager viewPager)
     {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         makananFragment=new MakananFragment();
@@ -178,7 +139,8 @@ public class MainActivity extends AppCompatActivity
         adapter.addFragment(menuSehatFragment,"MENU SEHAT");
         viewPager.setAdapter(adapter);
     }
-    */
+
+
 
 }
 

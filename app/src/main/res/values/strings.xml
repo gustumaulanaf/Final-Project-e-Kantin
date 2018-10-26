@@ -5,9 +5,26 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque eum voluptas. Amet eaque error esse est et fugiat fugit hic laborum nihil perferendis qui, recusandae reiciendis temporibus veritatis voluptatum!</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spin">Login Sebagai</string>
+    <string-array name="spinnerItems">
+        <item>Admin</item>
+        <item>Penjual</item>
+        <item>Pembeli</item>
+    </string-array>
+    <string name="tentang1">Aplikasi e-Kantin dibuat untuk keperluan memenuhi Final Project\n mata kuliah Mobile Programming\n
+    </string>
+    <string name="kelas">Kelas 17 D3 MI 01</string>
+    <string name="nama">\n Developer :\n\n
+    Ade Fitri A.D \n Mashudi Rohmat \n
+    Farhan Yulianto \n
+    Gustu Maulana Firmansyah \n
+    Faiqotur Rizki \n </string>
+    <string name="npm">\n
+17.02.0005 \n
+17.02.0008 \n
+17.02.0024 \n
+17.02.0039 \n
+17.02.0058
+    </string>
+    <string name="copyright">Copyright c Universitas AMIKOM Yogyakarta 2018</string>
 </resources>
