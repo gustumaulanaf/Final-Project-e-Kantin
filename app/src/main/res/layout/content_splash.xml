@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.finalproject.e_kantin.SplashActivity"
+    tools:showIn="@layout/app_bar_splash">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e-Kantin"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/lightgray"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="LineScalePartyIndicator"/>
+
+</RelativeLayout>
