@@ -24,7 +24,13 @@
         <activity android:name=".PenjualActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".TambahPenjualActivity"></activity>
-        <activity android:name=".TentangActivity"/>
+        <activity android:name=".TentangActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+        </activity>
     </application>
 
 </manifest>

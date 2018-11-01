@@ -5,11 +5,13 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -32,18 +34,39 @@ public class MainActivity extends AppCompatActivity
     MakananFragment makananFragment;
     MenuSehatFragment menuSehatFragment;
     MinumanFragment minumanFragment;
+    private Toolbar toolbar;
+    ViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         viewPager =findViewById(R.id.viewpager);
         viewPager.setOffscreenPageLimit(3);
-
+        setupViewPager(viewPager);
         tabLayout =findViewById(R.id.tablayout);
-        tabLayout.setupWithViewPager(viewPager);
 
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition(),false);
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -52,7 +75,7 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onPageSelected(int position) {
-                viewPager.setCurrentItem(position,false);
+                tabLayout.getTabAt(position).select();
 
             }
 
@@ -62,7 +85,6 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        setupViewPager(viewPager);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -83,6 +105,7 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
 
     @Override
     public void onBackPressed() {
@@ -107,12 +130,16 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.profile) {
 
-        }  else if (id == R.id.pengaturan) {
+        }
+
+        else if (id == R.id.pengaturan) {
 
         }
+
         else if (id == R.id.tentang) {
 
-
+            Intent intent = new Intent(MainActivity.this,TentangActivity.class);
+            startActivity(intent);
         }
         else if (id == R.id.keluar) {
             Intent intent = new Intent(MainActivity.this,LoginActivity.class);
@@ -127,18 +154,40 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+    /*
+    private void setupTabIcons() {
 
+        TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+        tabOne.setText("MAKANAN");
+        tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mie, 0, 0);
+        tabLayout.getTabAt(0).setCustomView(tabOne);
+
+        TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+        tabTwo.setText("MINUMAN");
+        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.gelas, 0, 0);
+        tabLayout.getTabAt(1).setCustomView(tabTwo);
+
+        TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
+        tabThree.setText("MENU SEHAT");
+        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.salad, 0, 0);
+        tabLayout.getTabAt(2).setCustomView(tabThree);
+    }
+    */
   private void setupViewPager(ViewPager viewPager)
     {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+       adapter = new ViewPagerAdapter(getSupportFragmentManager());
         makananFragment=new MakananFragment();
         minumanFragment=new MinumanFragment();
         menuSehatFragment=new MenuSehatFragment();
+
         adapter.addFragment(makananFragment,"MAKANAN");
         adapter.addFragment(minumanFragment,"MINUMAN");
         adapter.addFragment(menuSehatFragment,"MENU SEHAT");
+
         viewPager.setAdapter(adapter);
     }
+
+
 
 
 

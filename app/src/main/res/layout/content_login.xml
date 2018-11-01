@@ -6,17 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.finalproject.e_kantin.AdminActivity"
+    tools:context="com.example.finalproject.e_kantin.LoginActivity"
     tools:showIn="@layout/app_bar_login">
 
-    <ImageView
 
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:layout_above="@id/linear"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"/>
     <LinearLayout
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -27,6 +20,7 @@
         android:layout_height="wrap_content">
         <Spinner
             android:id="@+id/spinner"
+            android:background="@color/colorPri"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:drawSelectorOnTop="true"
@@ -43,7 +37,7 @@
             android:textColor="@color/putih"
             android:id="@+id/password"
             android:inputType="textPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Masukkan Password"/>
         <Button
