@@ -6,12 +6,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.finalproject.e_kantin.AdminActivity"
-    tools:showIn="@layout/app_bar_admin">
+    tools:context="com.example.finalproject.e_kantin.TentangActivity"
+    tools:showIn="@layout/app_bar_tentang">
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_gravity="center"
-       android:text="INI ACTIVITY TENTANG"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/amikom"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:text="Aplikasi Pemesanan Makanan dengan nama E-Kantin
+   Ini dibuat untuk keperluan memenuhi Final Project
+                Mata Kuliah Mobile Programming
+
+                               KELAS D3 MI (01)
+
+
+Developer :
+ADE FITRI ARWIDYA DEWI      (17.02.0005)
+MASHUDI ROHMAT                 (17.02.0008)
+FARHAN YULIYANTO               (17.02.0024)
+GUSTU MAULANA F                 (17.02.0039)
+FAIQOTUR RIZKI                       (17.02.0058)
+
+
+
+
+
+
+   Copyright &#169; Universitas Amikom Yogyakarta 2018"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>
