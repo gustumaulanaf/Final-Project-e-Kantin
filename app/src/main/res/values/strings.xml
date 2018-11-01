@@ -14,7 +14,7 @@
     <string name="tentang1">Aplikasi e-Kantin dibuat untuk keperluan memenuhi Final Project\n mata kuliah Mobile Programming\n
     </string>
     <string name="kelas">Kelas 17 D3 MI 01</string>
-    <string name="nama">\n Developer :\n\n
+    <string name="nama">Developer :\n\n
     Ade Fitri A.D \n Mashudi Rohmat \n
     Farhan Yulianto \n
     Gustu Maulana Firmansyah \n
@@ -27,4 +27,4 @@
 17.02.0058
     </string>
     <string name="copyright">Copyright c Universitas AMIKOM Yogyakarta 2018</string>
-</resources>
+   </resources>
