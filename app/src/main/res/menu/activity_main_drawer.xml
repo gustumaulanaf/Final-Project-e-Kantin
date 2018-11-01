@@ -16,7 +16,8 @@
             <item
                 android:id="@+id/pengaturan"
                 android:icon="@drawable/setting"
-                android:title="Pengaturan" />
+                android:title="Pengaturan"
+                />
             <item
                 android:id="@+id/tentang"
                 android:icon="@drawable/user"

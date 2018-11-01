@@ -5,15 +5,13 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Baru"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
     <include
-        layout="@layout/app_bar_add_penjual"
+        layout="@layout/app_bar_add_pembeli"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 
 
 </android.support.v4.widget.DrawerLayout>

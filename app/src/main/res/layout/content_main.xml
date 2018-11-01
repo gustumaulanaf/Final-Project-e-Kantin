@@ -29,7 +29,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:icon="@drawable/gelas"
-           android:text="MAKANAN"/>
+           android:text="MINUMAN"/>
        <android.support.design.widget.TabItem
            android:id="@+id/tb3"
            android:layout_width="match_parent"

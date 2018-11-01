@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Final-Project-e-Kantin.iml" filepath="$PROJECT_DIR$/Final-Project-e-Kantin.iml" />
+      <module fileurl="file://E:\Android\finalproject_ekantin\Final-Project-e-Kantin.iml" filepath="E:\Android\finalproject_ekantin\Final-Project-e-Kantin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\final-project\Final-Project-e-Kantin\app\app.iml" filepath="D:\final-project\Final-Project-e-Kantin\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finalproject_ekantin.iml" filepath="$PROJECT_DIR$/finalproject_ekantin.iml" />
       <module fileurl="file://D:\final-project\Final-Project-e-Kantin\finalproject_ekantin.iml" filepath="D:\final-project\Final-Project-e-Kantin\finalproject_ekantin.iml" />
     </modules>
   </component>

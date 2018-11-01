@@ -1,10 +1,14 @@
 package com.example.finalproject.e_kantin;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.Window;
+import android.widget.Spinner;
+import android.widget.Toast;
 
-public class TambahPenjualActivity extends AppCompatActivity {
+public class AddPembeliActivity extends AppCompatActivity {
 
 
     @Override

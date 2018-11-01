@@ -33,7 +33,8 @@
                     android:layout_height="64dp"
                     android:background="@color/colorPrimaryDark"
                     android:src="@drawable/pembeli"
-                    android:padding="10dp"/>
+                    android:padding="10dp"
+                    android:onClick="pembeli"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -64,6 +65,7 @@
                     android:layout_height="64dp"
                     android:background="@color/colorPrimaryDark"
                     android:src="@drawable/penjual"
+                    android:onClick="penjual"
                     android:padding="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"

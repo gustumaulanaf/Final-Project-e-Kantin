@@ -79,4 +79,13 @@ public class AdminActivity extends AppCompatActivity
     }
 
 
+    public void pembeli(View view) {
+        Intent intent = new Intent(AdminActivity.this,AddPembeliActivity.class);
+        startActivity(intent);
+    }
+
+    public void penjual(View view) {
+        Intent intent = new Intent(AdminActivity.this,TambahPenjualActivity.class);
+        startActivity(intent);
+    }
 }
