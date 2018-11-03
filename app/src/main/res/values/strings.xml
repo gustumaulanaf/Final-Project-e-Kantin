@@ -27,4 +27,5 @@
 17.02.0058
     </string>
     <string name="copyright">Copyright c Universitas AMIKOM Yogyakarta 2018</string>
-   </resources>
+    <string name="title_activity_penjuall">PenjuallActivity</string>
+</resources>

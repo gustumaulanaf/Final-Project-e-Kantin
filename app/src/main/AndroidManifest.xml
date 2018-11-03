@@ -31,7 +31,14 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".AddPembeliActivity" />
-        <activity android:name=".TambahPenjualActivity"/>
+        <activity android:name=".TambahPenjualActivity" />
+        <activity
+            android:name=".PenjuallActivity"
+            android:label="@string/title_activity_penjuall"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BuatMenuuActivity"></activity>
+        <activity android:name=".LihatMenuuActivity"></activity>
+        <activity android:name=".UbahMenuuActivity"></activity>
     </application>
 
 </manifest>

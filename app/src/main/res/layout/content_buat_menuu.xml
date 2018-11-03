@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.finalproject.e_kantin.BuatMenuuActivity"
+    tools:showIn="@layout/activity_buat_menuu">
+
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview1"
+        android:layout_below="@+id/textview1"
+        android:inputType="number"
+        android:maxLength="10">
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="ID MENU"/>
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edittext1"
+        android:layout_below="@+id/edittext1"
+        android:layout_marginTop="10dp"
+        android:text="Nama Menu"/>
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview2"
+        android:layout_below="@+id/textview2"
+        android:inputType="text"
+        android:maxLength="20"/>
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edittext2"
+        android:layout_below="@+id/edittext2"
+        android:layout_marginTop="10dp"
+        android:text="Harga Menu"/>
+    <EditText
+        android:id="@+id/edittext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview3"
+        android:layout_below="@+id/textview3"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edittext3"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Kembali"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/edittext3"
+        android:layout_alignEnd="@id/edittext3"
+        />
+</RelativeLayout>

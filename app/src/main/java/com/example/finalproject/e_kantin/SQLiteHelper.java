@@ -11,6 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class SQLiteHelper extends SQLiteOpenHelper {
+
     //DATABASE NAME
     public static final String DATABASE_NAME = "loopwiki.com";
 
@@ -116,4 +117,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         //if email does not exist return false
         return false;
     }
+    //database menu
+
 }
