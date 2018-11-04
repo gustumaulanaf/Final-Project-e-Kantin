@@ -4,35 +4,59 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/orangedit"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.finalproject.e_kantin.LoginActivity"
     tools:showIn="@layout/app_bar_login">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Sebagai :"
+        android:textColor="@color/putih"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_above="@id/linear"
+        android:id="@+id/textView2"/>
 
-
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear"
+        android:layout_toRightOf="@id/textView2"
+        android:drawSelectorOnTop="true"
+        android:prompt="@string/spin" />
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:gravity="center"
         android:id="@+id/linear"
         android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Spinner
-            android:id="@+id/spinner"
-            android:background="@color/colorPri"
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:drawSelectorOnTop="true"
-            android:prompt="@string/spin"
-            android:entries="@array/spinnerItems"
-            />
+            android:textColor="@color/putih"
+            android:layout_gravity="left"
+            android:text="Nama"
+            android:textSize="15sp"/>
         <EditText
             android:textColor="@color/putih"
             android:id="@+id/nama"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
+            android:inputType="textCapSentences"
             android:layout_height="wrap_content"
             android:hint="Masukkan Nama" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Password"
+            android:textColor="@color/putih"
+            android:layout_gravity="left"/>
         <EditText
             android:textColor="@color/putih"
             android:id="@+id/password"

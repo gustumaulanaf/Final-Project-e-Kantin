@@ -1,10 +1,12 @@
 package com.example.finalproject.e_kantin;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -35,13 +37,18 @@ public class PenjualActivity extends AppCompatActivity
     }
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda ingin Keluar?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                        moveTaskToBack(true);
 
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
 
@@ -59,6 +66,8 @@ public class PenjualActivity extends AppCompatActivity
         }
         else if (id == R.id.tentang) {
 
+            Intent intent = new Intent(PenjualActivity.this,TentangActivity.class);
+            startActivity(intent);
         }
         else if (id == R.id.pengaturan) {
 
