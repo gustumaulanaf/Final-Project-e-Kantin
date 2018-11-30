@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">E-Kantin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="spin">Login Sebagai</string>
+    <string-array name="spinnerItems">
+        <item>Admin</item>
+        <item>Penjual</item>
+        <item>Pembeli</item>
+    </string-array>
+    <string name="tentang1">Aplikasi e-Kantin dibuat untuk keperluan memenuhi Final Project\n mata kuliah Mobile Programming\n
+    </string>
+    <string name="kelas">Kelas 17 D3 MI 01</string>
+    <string name="nama">Developer :\n\n
+    Ade Fitri A.D \n Mashudi Rohmat \n
+    Farhan Yulianto \n
+    Gustu Maulana Firmansyah \n
+    Faiqotur Rizki \n </string>
+    <string name="npm">\n
+17.02.0005 \n
+17.02.0008 \n
+17.02.0024 \n
+17.02.0039 \n
+17.02.0058
+    </string>
+    <string name="copyright">Copyright c Universitas AMIKOM Yogyakarta 2018</string>
+    <string name="title_activity_penjuall">PenjuallActivity</string>
+    <string name="title_activity_aaaaaaaaaaaa">aaaaaaaaaaaa</string>
+</resources>
