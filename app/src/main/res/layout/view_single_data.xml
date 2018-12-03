@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="fill"
+            android:background="@color/colorPrimary"/>
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Data : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:id="@+id/tv_nama_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/barang_hint"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_merk_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/merk_hint"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_harga_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/harga_hint"
+        android:inputType="number" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/bt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+</LinearLayout>
